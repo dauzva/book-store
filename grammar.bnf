@@ -15,4 +15,6 @@
 <number>	::= <digit> | <number> <digit>
 <word>		::= <letter> | <digit> | <word> <letter> | <word> <digit>
 
-<commands>	::= "add" <book> | "remove" <book> 
+<commands>	::= "add" <book> | 
+				"remove" <book> |
+				"list"
