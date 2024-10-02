@@ -11,7 +11,7 @@ module Lib2
 -- It should match the grammar from Laboratory work #1.
 -- Currently it has no constructors but you can introduce
 -- as many as needed.
-data Query = Book
+data Query
 
 -- | The instances are needed basically for tests
 instance Eq Query where
@@ -23,8 +23,8 @@ instance Show Query where
 -- | Parses user's input.
 -- The function must have tests.
 parseQuery :: String -> Either String Query
---parseQuery _ = Left "Not implemented 2"
-parseQuery s = Right Book 
+parseQuery _ = Left "Not implemented 2"
+
 
 -- | An entity which represents your program's state.
 -- Currently it has no constructors but you can introduce
