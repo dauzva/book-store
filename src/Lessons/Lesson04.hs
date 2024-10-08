@@ -1,6 +1,6 @@
 {-# OPTIONS_GHC -Wno-unused-top-binds -Wname-shadowing #-}
 {-# LANGUAGE ImportQualifiedPost #-}
-module Lessons.Lesson04 () where
+module Lessons.Lesson04 (Parser, and2, parseChar, parseAlphaNum, parseNumber) where
 import qualified Data.Char as C
 import qualified Data.List as L
 import Data.Char (isAlpha)
