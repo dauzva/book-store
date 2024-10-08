@@ -42,3 +42,14 @@ data Person' = Person' {
 -- 13
 me :: Person'
 me = Person' "Petras" 45
+
+------------- MONADS ----------------------
+
+game :: IO String
+game = 
+	do
+		putStrLn "What is your name?"
+		name' <- getLine
+		let result = "Hello, " ++ name'
+		return result
+		--return ("Hello, " ++ name')
