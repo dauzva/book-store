@@ -35,7 +35,10 @@ parseQuery :: String -> Either String Query
 parseQuery str = 
     case parseCmd str of
         Left(eCmd) -> Left(eCmd)
-        Right(rCmd) -> Right(rCmd) -- <--- continue case stairs
+        Right(rCmd) -> 
+			case parseBook rCmd of
+				Left(eBook) -> Left(eBook)
+				Right(rBook) -> Right(rBook) -- <-- continue stairs
 
 
 parseCmd :: String -> Either String Query
@@ -48,8 +51,30 @@ parseCmd str =
         in
                 if      cmd == "add"    then Right (AddQuery rest)
                 else if cmd == "remove" then Right (RemoveQuery rest)
-                else if cmd == "list"   then Right ListQuery
+                else if cmd == "list"   then Right (ListQuery)
                 else                    Left "Invalid command"
+
+parseBook :: Query -> Either String Query
+parseBook ListQuery = Right ListQuery
+parseBook (AddQuery str) = 
+	case parseTitle str of
+		Left(e1) -> Left(e1)
+		Right(title, r1) -> Right(AddQuery title)
+parseBook (RemoveQuery str) = Right (RemoveQuery str) -- <-- to implement
+
+-- "Title example", 
+parseTitle :: String -> Either String (String, String)
+parseTitle str = 
+	let
+		titleStart = L.take 1 str
+		rest1 = drop 1 str
+		title = L.takeWhile (/= '\"') rest1
+		rest2 = drop ((length title) + 2) rest1
+		rest3 = L.takeWhile C.isSpace rest2
+		rest = drop (length rest3) rest2
+	in
+		if titleStart == "\"" then Right (title, rest)
+		else Left "Invalid Title syntax"
 
 
 -- | An entity which represents your program's state.
