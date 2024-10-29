@@ -12,11 +12,43 @@ tests :: TestTree
 tests = testGroup "Tests" [unitTests]
 
 unitTests :: TestTree
-unitTests = testGroup "Lib1 tests"
-  [ testCase "List of completions is not empty" $
-      null Lib1.completions @?= False,
-    testCase "Parsing case 1 - give a better name" $
-      Lib2.parseQuery "" @?= (Left "Some error message"),
-    testCase "Parsing case 2 - give a better name" $
-      Lib2.parseQuery "o" @?= (Left "Some error message")
-  ]
+unitTests = testGroup "Book Store Tests" [
+    testCase "Empty input" $
+        Lib2.parseQuery "" @?= Left "Invalid command",
+    
+    testCase "Invalid command" $
+        Lib2.parseQuery "hello" @?= Left "Invalid command",
+    
+    testCase "Add book - valid input" $
+        Lib2.parseQuery "add \"The Hobbit\", John Tolkien, Fantasy, 1937, 29.99" @?= 
+        Right (Lib2.AddQuery "The Hobbit, John Tolkien, Fantasy, 1937, 29.99"),
+
+    testCase "Add book - invalid title" $
+        Lib2.parseQuery "add The Hobbit, John Tolkien, jasdja, 1937, 29.99" @?= 
+        Left "Invalid Title syntax",
+
+    testCase "Add book - invalid author" $   
+        Lib2.parseQuery "add \"The Hobbit\", John 123, jasdja, 1937, 29.99" @?= 
+        Left "Invalid Author",
+    
+    testCase "Add book - invalid year" $
+        Lib2.parseQuery "add \"The Hobbit\", John Tolkien, Fantasy, 1, 29.99" @?= 
+        Left "Invalid Year",
+    
+    testCase "Add book - invalid genre" $
+        Lib2.parseQuery "add \"The Hobbit\", John Tolkien, jasdja, 1937, 29.99" @?= 
+        Left "Invalid Genre",
+    
+    testCase "Add book - invalid price format" $
+        Lib2.parseQuery "add \"The Hobbit\", John Tolkien, Fantasy, 1937, 29.999" @?= 
+        Left "Invalid Price",
+    
+    testCase "Remove - valid id" $
+        Lib2.parseQuery "remove 1" @?= Right (Lib2.RemoveQuery "1"),
+    
+    testCase "Remove - invalid id format" $
+        Lib2.parseQuery "remove abc" @?= Left "Invalid ID",
+    
+    testCase "List command" $
+        Lib2.parseQuery "list" @?= Right Lib2.ListQuery
+    ]

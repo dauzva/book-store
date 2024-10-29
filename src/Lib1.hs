@@ -7,4 +7,8 @@ module Lib1
 completions :: [String]
 completions = [ "add", 
                 "remove",
-                "list"]
+                "list",
+
+				-- Genre Selection
+				"Fiction", "Non-Fiction", "Mystery", "Thriller", "Romance", "Sci-Fi", "Fantasy", "Biography"
+				]
