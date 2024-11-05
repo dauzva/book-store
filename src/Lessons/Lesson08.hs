@@ -1,7 +1,7 @@
 {-# OPTIONS_GHC -Wno-unused-top-binds -Wname-shadowing #-}
 {-# LANGUAGE ImportQualifiedPost #-}
 {-# LANGUAGE InstanceSigs #-}
-module Lessons.Lesson08 () where
+module Lessons.Lesson08 (Parser(..)) where
 
 import Data.Char as C
 type OldParser a = String -> Either String (a, String)
@@ -72,3 +72,11 @@ parseThreeDigits' = do
     b <- parseDigit
     c <- parseDigit
     return (a, b, c)
+
+-- >>> Nothing <|> Just 5 <|> Just 6
+-- Variable not in scope:
+--   (<|>) :: t0_a1cqj[tau:1] -> Maybe a2_a1cqQ[tau:1] -> t_a1cqr[sk:1]
+-- Variable not in scope:
+--   (<|>)
+--     :: Maybe a0_a1cqK[tau:1]
+--        -> Maybe a1_a1cqM[tau:1] -> t0_a1cqj[tau:1]

@@ -33,6 +33,7 @@ library
       Lessons.Lesson06
       Lessons.Lesson07
       Lessons.Lesson08
+      Lessons.Lesson09
       Lib1
       Lib2
   other-modules:

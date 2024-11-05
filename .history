@@ -1,100 +1,100 @@
-add book adssad
-add bookasdsa
-add book21
-add asdsasd
-:r
-list asdadasd
 list
-add book labas
-add book 1
-remove book 456
-add book sadlsjd
-add book
-add book1
-add sdljasndjsanfsa
-ad sadlknaslds
-add   
-add
-dasdad
-add 12
-add 12
-add 12
-add 12
-add 12
-add 12
-add 12
-add 123asdsdasaasfsaas asdasd
-add 123asdsdasaasfsaas 
-add 123asdsdasaasfsaas 
-add 123asdsdasa
-add 123
-list asdasdsa
-remove 213
+remove 2
+remove -7
+remove 0
+remove 22
+add "Title", John Doe, Sci-Fi, 2001, 123
+add "Title", John Doe, Sci-Fi, 2001, ..1
+add "Title", John Doe, Sci-Fi, 2001, 1231
+add "Title", John Doe, Sci-Fi, 2001, 7.12
+list 
+remove 2
+remove 2
+list 
+add "Title", John Doe, Sci-Fi, 2001, 140
+add "Title", John Doe, Sci-Fi, 2001, 7.12
+add "Title", John Doe, Sci-Fi, 2001, 7.14
+add "Title", John Doe, Sci-Fi, 2001, 7.14\
+add "Title", John Doe, Sci-Fi, 2001, 7.145
+list 
+add "Title", John Doe, Sci-Fi, 2001, 7.14
+remove 1
+list 
+list 
+remove 1
+remove 0
+remove 12
+add "Title", John Doe, Sci-Fi, 2001, 7.14
+add "Title", John Doe, Sci-Fi, 2001, 7.1
+remove 1
+add "Title", John Doe, Sci-Fi, 2001, 7.1
+remove 2
+add "Title", John Doe, Sci-Fi, 2001, 7
+add "Title", John Doe, Sci-Fi, 2001, 78
+add "Title", John Doe, Sci-Fi, 2001, 780
+remove 1
+remove 0
+remove 2
+remove -1
+add "Title", John Doe, Sci-Fi, 2001, 780
+remove -1
+remove 12
+remove 1
+remove 0
+remove .
+remove 
+remove
+remove asd
+remove 0
+remove 1
+list 
+remove 1
+remove 2
+add "Title", John Doe, Sci-Fi, 2001, 780
+list 
+remove 2
+remove 1
+add "Title", John Doe, Sci-Fi, 2001, 780
+add "Title", John Doe, Sci-Fi, 2001, 78
+add "Title", John Doe, Sci-Fi, 2001, 15.47
+add "Title", John Doe, Sci-Fi, 2001, 15.4
+add "Title", John Doe, Sci-Fi, 2001, 15.4
+remove 1
+remove 1
+add "Title", John Doe, Sci-Fi, 2001, 50
+add "Title", John Doe, Sci-Fi, 2001, 15.4
+remove 1
+remove 2
+list 
+add "Title", John Doe, Sci-Fi, 2001, 15.4
+add "Title", John Doe, Sci-Fi, 2001, 15.4d
+remove 1
+list 
+add "Title", John Doe, Sci-Fi, 2001, 15.4d
+add "Title", John Doe, Sci-Fi, 2001, 15.d
+add "Title", John Doe, Sci-Fi, 2001, 15.10
 remove 
 list 
+add "Title", John Doe, Sci-Fi, 2001, 15.10
+remove 
 list 
-add 123aasddsa
-add 123a
-fsad
-add    labas diena
-add    labas
-add 132
-adsafsfa
-add knyga123 sdassad asd as das as  sa das
-add knyga123
-add knyga
-add
-add
-fsalhdaslkl;as
-add       qqqq
-add       qqqq
-add       qqqq
-add s dsdaa
-add 123 456 asdsdaa
-add 123
-add 123
-add 123
-add 123 56465asd4
-add 123
-add 123labas asd sa da s
-add 123labas
-add 123
-add 123456789
-add 123456
-add 123
-add asdsad
-add asdsad
-add asdsad
-add asdsad
-add asdsad
-add asdsad
-add asdsad
-add 
-add 
-add 
-emptty
-add 
-ADD
-add
-add
-add
-add
-emp
-add 
-add 
-dsad
-add
-add
-add
-add
-add
-add
-adddddd
- add
-add  dsadasddsadsad sad as
-add  dsadasd
-add 
-add 
-add
-ASDAD
-:r
+add "Title", John Doe, Sci-Fi, 2001, 15.10
+add "Title", John Doe, Sci-Fi, 2001, 15.10
+remove 
+list
+add "Title", John Doe, Sci-Fi, 2001, 15.10
+add "Title", jonas jonaitis   ,  Thriller, 2002 , 12
+add "Title", jonas jonaitis   ,  Thriller, 2002 , 
+add "Title", jonas jonaitis   ,  Thriller, 2002 , 51..5
+add "Title", jonas jonaitis   ,  Thriller, 2002 , 51..
+add "Title", jonas jonaitis   ,  Thriller, 2002 , 51.1.
+add "Title", jonas jonaitis   ,  Thriller, 2002 , 51.1v5
+add "Title", jonas jonaitis   ,  Thriller, 2002 , 51.154 
+add "Title", jonas jonaitis   ,  Thriller, 2002 , 51.1544
+add "Title", jonas jonaitis   ,  Thriller, 2002 , 51.15
+add "Title", jonas jonaitis   ,  Thriller, 2002 , 51.1 5
+add "Title", jonas jonaitis   ,  Thriller, 2002 , 51.1 
+add "Title", jonas jonaitis   ,  Thriller, 2002 , 51.1
+add "Title", jonas jonaitis   ,  Thriller, 2002 , 51.
+add "Title", jonas jonaitis   ,  Thriller, 2002 , 51    .       5
+add "Title", jonas jonaitis   ,  Thriller, 2002 , 51    .       
