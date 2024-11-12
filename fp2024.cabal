@@ -34,6 +34,7 @@ library
       Lessons.Lesson07
       Lessons.Lesson08
       Lessons.Lesson09
+      Lessons.Lesson10
       Lib1
       Lib2
   other-modules:
@@ -45,6 +46,7 @@ library
   ghc-options: -Wall -Wcompat -Widentities -Wincomplete-record-updates -Wincomplete-uni-patterns -Wmissing-export-lists -Wmissing-home-modules -Wpartial-fields -Wredundant-constraints
   build-depends:
       base >=4.7 && <5
+    , transformers
   default-language: Haskell2010
 
 executable fp2024-one
@@ -60,6 +62,7 @@ executable fp2024-one
       base >=4.7 && <5
     , fp2024
     , repline
+    , transformers
   default-language: Haskell2010
 
 executable fp2024-two
@@ -76,6 +79,7 @@ executable fp2024-two
     , fp2024
     , mtl
     , repline
+    , transformers
   default-language: Haskell2010
 
 test-suite fp2024-doctest
@@ -91,6 +95,7 @@ test-suite fp2024-doctest
   build-depends:
       base >=4.7 && <5
     , doctest
+    , transformers
   default-language: Haskell2010
 
 test-suite fp2024-test
@@ -108,4 +113,5 @@ test-suite fp2024-test
     , fp2024
     , tasty
     , tasty-hunit
+    , transformers
   default-language: Haskell2010
