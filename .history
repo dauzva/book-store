@@ -1,3 +1,10 @@
+list 
+remove 1
+remove 2
+list
+add "Title", John Doe, Sci-Fi, 2001, 123
+add
+ad
 list
 remove 2
 remove -7
@@ -91,10 +98,3 @@ add "Title", jonas jonaitis   ,  Thriller, 2002 , 51.1.
 add "Title", jonas jonaitis   ,  Thriller, 2002 , 51.1v5
 add "Title", jonas jonaitis   ,  Thriller, 2002 , 51.154 
 add "Title", jonas jonaitis   ,  Thriller, 2002 , 51.1544
-add "Title", jonas jonaitis   ,  Thriller, 2002 , 51.15
-add "Title", jonas jonaitis   ,  Thriller, 2002 , 51.1 5
-add "Title", jonas jonaitis   ,  Thriller, 2002 , 51.1 
-add "Title", jonas jonaitis   ,  Thriller, 2002 , 51.1
-add "Title", jonas jonaitis   ,  Thriller, 2002 , 51.
-add "Title", jonas jonaitis   ,  Thriller, 2002 , 51    .       5
-add "Title", jonas jonaitis   ,  Thriller, 2002 , 51    .       
